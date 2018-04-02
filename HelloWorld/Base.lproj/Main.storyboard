@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,39 +15,103 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ハローワールド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqy-Gp-PN0">
-                                <rect key="frame" x="49" y="80" width="122" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qK-Ws-oYk">
-                                <rect key="frame" x="148" y="223" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qK-Ws-oYk">
+                                <rect key="frame" x="95" y="299" width="31" height="30"/>
                                 <state key="normal" title="緑色"/>
                                 <connections>
                                     <action selector="tapGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7o-Nd-Pdy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMk-KD-h1c">
-                                <rect key="frame" x="172" y="318" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMk-KD-h1c">
+                                <rect key="frame" x="195" y="299" width="31" height="30"/>
                                 <state key="normal" title="白色"/>
                                 <connections>
                                     <action selector="tapWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tr4-Y7-D3M"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUt-QV-Ack">
+                                <rect key="frame" x="203" y="488" width="77" height="30"/>
+                                <state key="normal" title="右下ボタン"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハローワールド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Oqy-Gp-PN0">
+                                <rect key="frame" x="112" y="233" width="128" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3K-9C-0EI">
+                                <rect key="frame" x="176" y="358" width="68" height="30"/>
+                                <state key="normal" title="thank you"/>
+                                <connections>
+                                    <action selector="thankYou:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7x-Aa-Lm8"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfl-6b-KYi">
+                                <rect key="frame" x="94" y="467" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="数値を入れる" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ezX-Bp-10a">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIj-7E-n1O">
+                                <rect key="frame" x="24" y="472" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPl-Ec-mdd">
+                                <rect key="frame" x="94" y="358" width="33" height="30"/>
+                                <state key="normal" title="hello"/>
+                                <connections>
+                                    <action selector="hello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMn-gU-Mfe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="i3K-9C-0EI" firstAttribute="top" secondItem="xMk-KD-h1c" secondAttribute="bottom" constant="29" id="CbM-zg-rcB"/>
+                            <constraint firstItem="i3K-9C-0EI" firstAttribute="baseline" secondItem="VPl-Ec-mdd" secondAttribute="baseline" id="ICX-RM-8I2"/>
+                            <constraint firstItem="3qK-Ws-oYk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="Jq0-Jl-dIv"/>
+                            <constraint firstItem="Oqy-Gp-PN0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="213" id="MNp-Ec-xxz"/>
+                            <constraint firstItem="i3K-9C-0EI" firstAttribute="centerX" secondItem="xMk-KD-h1c" secondAttribute="centerX" id="Wkt-dC-riX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kUt-QV-Ack" secondAttribute="trailing" constant="40" id="fS8-IE-llP"/>
+                            <constraint firstItem="3qK-Ws-oYk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="h13-HM-uox"/>
+                            <constraint firstItem="xMk-KD-h1c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="oAt-B3-Ol7"/>
+                            <constraint firstItem="xMk-KD-h1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="q4h-sZ-jSS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oqy-Gp-PN0" secondAttribute="trailing" constant="80" id="qYx-97-hAz"/>
+                            <constraint firstItem="Oqy-Gp-PN0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="rp1-8P-PrN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kUt-QV-Ack" secondAttribute="bottom" constant="50" id="ugd-NZ-8RN"/>
+                            <constraint firstItem="VPl-Ec-mdd" firstAttribute="centerX" secondItem="3qK-Ws-oYk" secondAttribute="centerX" id="wEu-6Z-mvX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3Dz-Hz-Wi6" appends="YES" id="XwC-S7-GYm"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Oqy-Gp-PN0" id="oIM-jz-6UF"/>
+                        <outlet property="myLabel2" destination="tIj-7E-n1O" id="Dh7-3s-moA"/>
+                        <outlet property="myTextField" destination="ezX-Bp-10a" id="jjT-SJ-TkK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3Dz-Hz-Wi6">
+                    <connections>
+                        <action selector="tapView:" destination="BYZ-38-t0r" id="Zh9-fe-CmV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="88.125" y="32.74647887323944"/>
         </scene>
     </scenes>
 </document>
