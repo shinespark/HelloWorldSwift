@@ -75,6 +75,10 @@
                                     <action selector="hello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMn-gU-Mfe"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fg-6f-UPB">
+                                <rect key="frame" x="-10" y="70" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -101,6 +105,7 @@
                     <connections>
                         <outlet property="myLabel" destination="Oqy-Gp-PN0" id="oIM-jz-6UF"/>
                         <outlet property="myLabel2" destination="tIj-7E-n1O" id="Dh7-3s-moA"/>
+                        <outlet property="myPickerView" destination="2fg-6f-UPB" id="wvP-da-6x3"/>
                         <outlet property="myTextField" destination="ezX-Bp-10a" id="jjT-SJ-TkK"/>
                     </connections>
                 </viewController>
